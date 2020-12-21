@@ -65,13 +65,14 @@ public class Frequencer implements FrequencerInterface{
         // "Hi"     <  "Ho"       ; if head is same, compare the next element    
         // "Ho"     <  "Ho "      ; if the prefix is identical, longer string is big  
         //  
-        //The return value of "int suffixCompare" is as follows. 
+        //The return value of "int suffixCompare" is ？as follows. 
         // if suffix_i > suffix_j, it returns 1   
         // if suffix_i < suffix_j, it returns -1  
         // if suffix_i = suffix_j, it returns 0;   
 
         // ここにコードを記述せよ 
-        //                                          
+        //                          
+                        
         return 0; // この行は変更しなければいけない。 
     }
 
@@ -201,7 +202,7 @@ public class Frequencer implements FrequencerInterface{
         // It returns the index of the first suffix 
         // which is equal or greater than target_start_end.                         
 	// Suppose target is set "Ho Ho Ho Ho"
-        // if start = 0, and end = 2, target_start_end is "Ho".
+        // if start = 0, and end = 2, target．．_start_end is "Ho".
         // if start = 0, and end = 3, target_start_end is "Ho ".
         // Assuming the suffix array is created from "Hi Ho Hi Ho",                 
         // if target_start_end is "Ho", it will return 5.                           
@@ -254,12 +255,12 @@ public class Frequencer implements FrequencerInterface{
     // 注意：標準出力、エラー出力にメッセージを出すことは、
     // static mainからの実行のときだけに許される。
     // 外部からFrequencerを使うときにメッセージを出力してはならない。
-    // 教員のテスト実行のときにメッセージがでると、仕様にない動作をするとみなし、
+    // 教員のテスト実行のときにメッセージがでると、仕様にない動作をするとFrequencerみなし、
     // 減点の対象である。
     public static void main(String[] args) {
         Frequencer frequencerObject;
         try { // テストに使うのに推奨するmySpaceの文字は、"ABC", "CBA", "HHH", "Hi Ho Hi Ho".
-            frequencerObject = new Frequencer();
+            frequencerObject = new Frequencer();Frequencer
             frequencerObject.setSpace("ABC".getBytes());
             frequencerObject.printSuffixArray();
             frequencerObject = new Frequencer();
